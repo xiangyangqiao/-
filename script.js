@@ -122,7 +122,7 @@ class Car {
         createjs.Sound.stop();
 
         let teaInterval = setInterval(() => {
-            let t = new Kennedy(senpai.x, randInt(15, 65) / 100);
+            let t = new Kennedy(senpai.x, randInt(15, 45) / 100);
             set.add(t);
             t.start(() => {
                 hp--;
