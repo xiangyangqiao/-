@@ -1,0 +1,83 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    background-image: url(./img/bg.png);
+    background-size: cover;
+}
+
+#game {
+    width: 100%;
+    height: 100%;
+}
+
+#line {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    background-color: antiquewhite;
+}
+
+.kennedy {
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    background-image: url(./img/kennedy.png);
+    background-size: cover;
+}
+
+.car {
+    width: 150px;
+    height: 30px;
+    top: 10%;
+    position: relative;
+    background-image: url(./img/car.png);
+    background-size: cover;
+    z-index: 99;
+}
+
+.carmove {
+    animation: carmove 2s ease-in-out infinite;
+}
+
+@keyframes carmove {
+    0% {
+        left: 0;
+        right: 100%;
+    }
+    50% {
+        left: 80%;
+        right: 0;
+    }
+    100% {
+        left: 0;
+        right: 100%;
+    }
+}
+
+.welcome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./img/bg.png);
+    background-size: cover;
+    overflow: hidden;
+}
+
+#welcome-board {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.stroke {
+    text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
+}
